@@ -6,6 +6,10 @@ function App() {
 
   return (
     <>
+      <span id="sisyphus-loader">
+          <div id="box"></div>
+          {/* <div id="hill"></div> */}
+      </span>
       <NavigationBar />
       <h1 className="colour_1">colour_1</h1>
       <h1 className="colour_2">colour_2</h1>
