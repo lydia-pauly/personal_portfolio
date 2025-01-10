@@ -1,7 +1,7 @@
 function NavigationBar() {
     return <>
     <span className="nav-bar">
-        <h1 className="title">Lydia Pauly</h1>
+    <h1 className="title">Lydia Pauly</h1>
         <ul className="item-list">
             <li className="item">Home</li>
             <li className="item">Quick CV</li>
