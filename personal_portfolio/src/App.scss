@@ -7,8 +7,16 @@ body {
   margin-right: 10%;
 }
 
+@keyframes colorChange {
+  0% { color: #EE1B26; }
+  25% { color: #0A60FF; }
+  50% { color: #FAF33E; }
+  75% { color: #F8E9E9; }
+  100% { color: #EE1B26; }
+}
+
 h1, h2, h3, h4, h5, p, li {
-  color: #BFBDC1;
+  color: #F8E9E9;
   font-family: "Inconsolata", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -22,6 +30,7 @@ h1, h2, h3, h4, h5, p, li {
 
   .title {
     font-size: 20px;
+    animation: colorChange linear 2s infinite;
   }
 
   .item-list {
