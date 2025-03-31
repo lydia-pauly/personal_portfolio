@@ -1,15 +1,23 @@
+import { BrowserRouter as Router } from "react-router";
+
+
 function NavigationBar() {
-    return <>
-    <span className="nav-bar">
-    <h1 className="title">Lydia Pauly</h1>
-        <ul className="item-list">
-            <li className="item">Home</li>
-            <li className="item">Quick CV</li>
-            <li className="item">Writing</li>
-            <li className="item">Cool work</li>
-        </ul>
-    </span>
-    </>
+    return (
+
+    <Router>
+        <span className="nav-bar">
+            <h1 className="title">Lydia Pauly</h1>
+                <nav>
+                    <ul className="item-list">
+                        <li className="item"><a href="/">Home</a></li>
+                        <li className="item"><a href="/about">Quick CV</a></li>
+                        <li className="item"><a href="/contact">Writing</a></li>
+                        <li className="item">Cool work</li>
+                    </ul>
+                </nav>
+        </span>
+    </Router>
+    );
 }
 
 export default NavigationBar;
